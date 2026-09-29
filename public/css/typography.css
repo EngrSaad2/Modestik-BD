@@ -1,0 +1,238 @@
+/* ==========================================================================
+   Modestik Typography System — Inter (English) & SolaimanLipi (Bangla)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+:root {
+    --font-english: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-bangla: 'SolaimanLipi', sans-serif;
+    --font-family-base: 'SolaimanLipi', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-family-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   ENGLISH TYPOGRAPHY SCALE (DEFAULT)
+   ========================================================================== */
+
+/* Page Title: Inter 28px, 700 */
+h1, .h1, .page-title, .admin-page-title, .page-header-title {
+    font-family: var(--font-english);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Section Title: Inter 18px, 600 */
+h2, .h2, h3, .h3, .section-title, .section-header {
+    font-family: var(--font-english);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Card Title: Inter 16px, 600 */
+h4, .h4, h5, .h5, h6, .h6, .card-title, .card-header h5, .form-card h5, .table-card .card-header h5 {
+    font-family: var(--font-english);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Sidebar Menu: Inter 14px, 500 */
+.admin-sidebar .nav-item a, .sidebar-menu a, .list-group-item {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Navigation Menu: Inter 14px, 500 */
+.navbar-nav .nav-link, .nav-menu a, .header-nav a, .main-menu a {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Table Header: Inter 13px, 600 */
+table thead th, .table thead th, .table-responsive table th {
+    font-family: var(--font-english);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Table Content: Inter 14px, 400 */
+table tbody td, .table tbody td, .table-responsive table td {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Form Label: Inter 14px, 500 */
+label, .form-label {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Input Text: Inter 14px, 400 */
+input.form-control, select.form-select, textarea.form-control, .form-control, .form-select {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Input Placeholder: Inter 14px, 400, #9CA3AF */
+input::placeholder, textarea::placeholder, .form-control::placeholder, .form-select::placeholder {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 400;
+    color: #9CA3AF !important;
+    opacity: 1;
+}
+
+/* Buttons: Inter 14px, 600 */
+.btn, button, input[type="submit"], input[type="button"], .btn-sm, .btn-md, .btn-lg {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    gap: 6px !important;
+}
+
+.btn i, button i, a.btn i {
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+}
+
+/* Badge Text: Inter 12px, 600 */
+.badge {
+    font-family: var(--font-english);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Small Helper Text: Inter 12px, 400 */
+small, .small, .form-text, .text-muted-sm, .help-text {
+    font-family: var(--font-english);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Modal Title: Inter 20px, 600 */
+.modal-title {
+    font-family: var(--font-english);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Modal Body: Inter 14px, 400 */
+.modal-body {
+    font-family: var(--font-english);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Breadcrumb: Inter 13px, 500 */
+.breadcrumb, .breadcrumb-item {
+    font-family: var(--font-english);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ==========================================================================
+   BANGLA TYPOGRAPHY OVERRIDES (Auto-applied to Bangla content)
+   ========================================================================== */
+
+.bn-text, [lang="bn"], :lang(bn) {
+    font-family: var(--font-bangla) !important;
+}
+
+/* Bangla Page Title: SolaimanLipi 30px, 700 */
+.bn-text.page-title, .bn-text.admin-page-title, .bn-text.h1, h1.bn-text,
+.page-title.bn-text, [lang="bn"] .page-title, [lang="bn"] h1 {
+    font-family: var(--font-bangla) !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+
+/* Bangla Section Title: SolaimanLipi 20px, 700 */
+.bn-text.section-title, .bn-text.h2, .bn-text.h3, h2.bn-text, h3.bn-text,
+.section-title.bn-text, [lang="bn"] .section-title, [lang="bn"] h2, [lang="bn"] h3 {
+    font-family: var(--font-bangla) !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+/* Bangla Card Title: SolaimanLipi 18px, 700 */
+.bn-text.card-title, .bn-text.h4, .bn-text.h5, h4.bn-text, h5.bn-text, h6.bn-text,
+.card-title.bn-text, [lang="bn"] .card-title, [lang="bn"] h4, [lang="bn"] h5 {
+    font-family: var(--font-bangla) !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+/* Bangla Sidebar Menu: SolaimanLipi 15px, 400 */
+.admin-sidebar .bn-text, .admin-sidebar .nav-item a.bn-text, .admin-sidebar :lang(bn) {
+    font-family: var(--font-bangla) !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+
+/* Bangla Table Header: SolaimanLipi 15px, 700 */
+table thead th.bn-text, th.bn-text, :lang(bn) table thead th, [lang="bn"] table thead th {
+    font-family: var(--font-bangla) !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+/* Bangla Table Content: SolaimanLipi 16px, 400 */
+table tbody td.bn-text, td.bn-text, :lang(bn) table tbody td, [lang="bn"] table tbody td {
+    font-family: var(--font-bangla) !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+/* Bangla Form Label: SolaimanLipi 16px, 400 */
+label.bn-text, .form-label.bn-text, :lang(bn) label, [lang="bn"] label {
+    font-family: var(--font-bangla) !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+/* Bangla Input Text: SolaimanLipi 16px, 400 */
+input.bn-text, textarea.bn-text, select.bn-text, :lang(bn) input, :lang(bn) textarea {
+    font-family: var(--font-bangla) !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+/* Bangla Input Placeholder: SolaimanLipi 16px, 400, #9CA3AF */
+input.bn-text::placeholder, textarea.bn-text::placeholder, .bn-placeholder::placeholder {
+    font-family: var(--font-bangla) !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #9CA3AF !important;
+}
+
+/* Bangla Buttons: SolaimanLipi 16px, 700 */
+.btn.bn-text, button.bn-text, :lang(bn) .btn, [lang="bn"] .btn {
+    font-family: var(--font-bangla) !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+/* Bangla Small Text: SolaimanLipi 14px, 400 */
+small.bn-text, .small.bn-text, :lang(bn) small, [lang="bn"] small {
+    font-family: var(--font-bangla) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
